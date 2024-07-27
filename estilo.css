@@ -1,0 +1,61 @@
+html {
+    cursor: url(imagens/mata_mosca.png) 30 30, auto;
+}
+
+body{
+    background-image: url('imagens/bg.png') ;
+    /* background-repeat: no-repeat; */
+    background-size:cover ;
+    background-position: center;
+    
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.mosquito1 {
+    width: 100px;
+    height: 100px;
+}
+
+.mosquito2 {
+    width: 120px;
+    height: 120px;
+}
+
+.mosquito3{
+    width: 150px;
+    height: 150px;
+}
+
+.ladoA{
+    transform: scaleX(1);
+}
+
+.ladoB{
+    transform: scaleX(-1);
+}
+.painel{
+
+    display: flex; /* Define o contêiner como flexível */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: flex-end; /* Alinha o conteúdo na parte inferior */
+    height: 95vh; /* Ocupa a altura total da viewport */
+   
+    background-color: transparent;
+    
+}
+
+.coracoes {
+    width: 100px;
+}
+
+.vidas {
+    float: left;
+}
+
+.cronometro{
+    font-size: 30px;
+    font-family: arial;
+  position: absolute;
+  color: white;
+}

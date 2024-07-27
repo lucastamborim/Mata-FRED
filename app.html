@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mata FRED</title>
+    <script src="jogo.js"></script>
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+        body {
+            background-image: url(imagens/bg_jogo.jpg);
+            }
+        
+    </style>
+</head>
+
+<body onresize="ajustaTamanhoPalcoJogo()"> 
+
+   
+    <div class="cronometro"> Tempo restante: <span id="cronometro"></span>  </div>
+
+    <div class="painel">
+        <div class="vidas">
+            <img class="coracoes" id="v1" src="imagens/coracao_cheio.png" />    
+            <img class="coracoes" id="v2" src="imagens/coracao_cheio.png" />
+            <img class="coracoes" id="v3" src="imagens/coracao_cheio.png" />
+            <img class="coracoes" id="v4" src="imagens/coracao_cheio.png" />
+            <img class="coracoes" id="v5" src="imagens/coracao_cheio.png" />
+        </div>
+
+        <script>
+            //criando a logica de diminuir coracao
+        var nivel = window.location.search // aqui ele recupera apenas o valor dado após a ? do href
+        nivel = nivel.replace('?','') //substituindo o caracter '? 'para '' ( vazio )
+        
+        </script>
+ </div>
+
+ <audio id="myAudio2">
+    <source src="audio/gemidao.mp3" type="audio/mp3"></audio>
+
+      
+    <script>
+         
+
+    document.getElementById('cronometro').innerHTML = tempo//alterando o valor entre as tags do span 'cronometro'
+
+        var criaMosca = setInterval(function(){
+            posicaoRandomica()
+        }, criaMosquitoTempo )
+
+    </script>
+</body>
+</html>
